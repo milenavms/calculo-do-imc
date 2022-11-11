@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name"></string>
+    <string name="peso_erro">"Informe seu peso!"</string>
+    <string name="altura_erro">"Informe sua altura!"</string>
+    <string name="peso_baixo">"Peso Baixo"</string>
+    <string name="saudavel">"Saudável"</string>
+    <string name="sobrepeso">"Sobrepeso"</string>
+    <string name="obesidade_1">"Obesidade (Grau 1)"</string>
+    <string name="obesidade_2">"Obesidade Servera (Grau 2)"</string>
+    <string name="obesidade_3">"Obesidade Morbida (Grau 3)"</string>
+</resources>

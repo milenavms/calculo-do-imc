@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculadora de IMC"
+        android:textSize = "18sp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:textColor="@color/primary_color"
+        android:gravity="center"
+        android:textStyle="bold"
+       />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutPeso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginStart="50dp"
+        android:hint="Informe seu peso (kg)"
+        app:hintTextColor="@color/primary_color"
+        app:boxStrokeColor="@color/primary_color"
+        app:errorEnabled="true"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editPeso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginStart="50dp"
+        android:hint="Informe a sua altura (m)"
+        app:hintTextColor="@color/primary_color"
+        app:boxStrokeColor="@color/primary_color"
+        app:errorEnabled="true"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editAltura"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/calculaIMC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15sp"
+        android:text="Calcular IMC"
+        android:textAllCaps="false"
+        android:layout_marginTop="30sp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginStart="50dp"
+        android:backgroundTint="@color/primary_color"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="você está"
+        android:textAllCaps="true"
+        android:layout_marginTop="30sp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginStart="50dp"
+        android:textColor="@color/gray"
+        android:gravity="center"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/textResultadoIMC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:textAllCaps="true"
+        android:textSize="25dp"
+        android:layout_marginTop="10sp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/primary_color"
+        android:gravity="center"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="seu imc é"
+        android:textAllCaps="true"
+        android:layout_marginTop="30sp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginStart="50dp"
+        android:textColor="@color/gray"
+        android:gravity="center"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/textResultadoValorImc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0.0"
+        android:textAllCaps="true"
+        android:textSize="25dp"
+        android:layout_marginTop="10sp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/primary_color"
+        android:gravity="center"
+        android:textStyle="bold"/>
+
+
+</LinearLayout>
