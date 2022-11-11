@@ -1,6 +1,8 @@
 # calculo-do-imc
-app android-java
 
-![image](https://user-images.githubusercontent.com/47642347/201357559-c0fa0505-0f98-4332-ad77-d588d50f3b64.png)
+
+
+![image](https://user-images.githubusercontent.com/47642347/201357901-f2d685c1-7b86-4ed5-8452-7c10389e4fa2.png)
+
 
 
