@@ -16,6 +16,8 @@ import com.google.android.material.textfield.TextInputLayout;
 
 import org.w3c.dom.Text;
 
+import java.text.DecimalFormat;
+
 public class MainActivity extends AppCompatActivity {
 
     private TextInputEditText textPeso, textAltura;
@@ -59,11 +61,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public  void calculaIMC(){
-        Float peso = Float.parseFloat(textPeso.getText().toString());
-        Float altura = Float.parseFloat(textAltura.getText().toString());
+        Float peso = Float.parseFloat(textPeso.getText().toString().replace(",","."));
+        Float altura = Float.parseFloat(textAltura.getText().toString().replace(",","."));
         Float imc = peso / (altura * altura);
 
-        textValorImc.setText(imc.toString());
+        DecimalFormat decimalFormat = new DecimalFormat("0.00");
+        ;
+        textValorImc.setText(decimalFormat.format(imc));
 
         if (imc < 18.5){
             textResultadoImc.setText(getText(R.string.peso_baixo));
